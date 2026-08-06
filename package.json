@@ -1,0 +1,20 @@
+{
+  "name": "spidey",
+  "version": "1.0.0",
+  "description": "this is my node.js app ",
+  "homepage": "https://github.com/chandraprakashmishra18/Node.js#readme",
+  "bugs": {
+    "url": "https://github.com/chandraprakashmishra18/Node.js/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chandraprakashmishra18/Node.js.git"
+  },
+  "license": "ISC",
+  "author": "Chandra Prakash Mishra",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
