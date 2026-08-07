@@ -29,5 +29,8 @@
 // const filePath = path.join(__dirname,'data','data.txt');
 // console.log(filePath);
 
-const process = require('process');
-console.log(process.argv[2]);
+// const process = require('process');
+// console.log(process.argv[2]);
+
+require('dotenv').config();
+console.log(process.env.PORT);
