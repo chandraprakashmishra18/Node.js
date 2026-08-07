@@ -4,8 +4,8 @@
 
 
 
-import chalk from 'chalk';
-console.log(chalk.blue('hello spideyyy  bsf of iron man'));
+// import chalk from 'chalk';
+// console.log(chalk.blue('hello spideyyy  bsf of iron man'));
 
 // const chalk = require('chalk');
 // console.log(chalk.blue('spideyy alwaays loved iron man'));
@@ -14,7 +14,7 @@ console.log(chalk.blue('hello spideyyy  bsf of iron man'));
 const os = require('os');
 const userInfo = os.userInfo();
 const platform = os.platform();
-const architecture = os.architecture();
+const architecture = os.arch();
 const uptime = os.uptime();
 
 console.log(userInfo);
@@ -22,5 +22,9 @@ console.log(platform);
 console.log(architecture);
 console.log(uptime);
 
-const fs = require('fs');
-fs.writeFileSync('data/data.txt','Hello,World!');
+// const fs = require('fs');
+// fs.writeFileSync('data/data.txt','Hello,World!');
+
+// const path = require('path');
+// const filePath = path.join(__dirname,'data','data.txt');
+// console.log(filePath);
