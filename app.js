@@ -32,5 +32,5 @@
 // const process = require('process');
 // console.log(process.argv[2]);
 
-require('dotenv').config();
-console.log(process.env.PORT);
+// require('dotenv').config();
+// console.log(process.env.PORT);
