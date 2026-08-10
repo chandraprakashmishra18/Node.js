@@ -2,8 +2,6 @@
 // const citiesname = require('./data/mydata');
 // console.log(citiesname);
 
-
-
 // import chalk from 'chalk';
 // console.log(chalk.blue('hello spideyyy  bsf of iron man'));
 
@@ -34,3 +32,14 @@
 
 // require('dotenv').config();
 // console.log(process.env.PORT);
+
+const http = require('http');
+require("dotenv").config();
+const Port = process.env.PORT || 3000;
+
+const server = http.createServer((req, res) => {
+  res.writeHead(200, { "Content-Type": "text/html" });
+  res.write("<h1>Welcome to Node.js!</h1>");
+  res.write("<p>Your first HTTP server is running.</p>");
+  res.end();
+});
