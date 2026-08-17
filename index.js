@@ -41,5 +41,11 @@
 const express = require("express");
 const app = express();
 const port = 3000;
-const packageJson = require("./data/tour")
-app.get("/packages", (req,res))
+const packageJson = require("./data/tour");
+
+app.get("/packages", (req,res)) => {
+    const destination = req.query.des;
+    if(!destination) {
+        
+    }
+}
