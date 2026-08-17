@@ -38,3 +38,8 @@
 // app.listen(5000,()=>{
 //     console.log("Server is running on port 5000")
 // })
+const express = require("express");
+const app = express();
+const port = 3000;
+const packageJson = require("./data/tour")
+app.get("/packages", (req,res))
