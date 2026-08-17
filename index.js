@@ -46,6 +46,7 @@ const packageJson = require("./data/tour");
 app.get("/packages", (req,res)) => {
     const destination = req.query.des;
     if(!destination) {
-        
-    }
+        res.json(packageJson) ;   }
 }
+const filteredPackages = packageJson.filter((pkg)=>pkg.desstination.toLowerCase()=== destination.toLowerCase());
+res.json(filteredPackages)
