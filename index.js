@@ -39,14 +39,28 @@
 //     console.log("Server is running on port 5000")
 // })
 const express = require("express");
+
 const app = express();
 const port = 3000;
+
 const packageJson = require("./data/tour");
 
-app.get("/packages", (req,res)) => {
+app.get("/packages", (req, res) => {
     const destination = req.query.des;
-    if(!destination) {
-        res.json(packageJson) ;   }
-}
-const filteredPackages = packageJson.filter((pkg)=>pkg.desstination.toLowerCase()=== destination.toLowerCase());
-res.json(filteredPackages)
+
+    if (!destination) {
+        res.json(packageJson);
+        return;
+    }
+
+    const filteredPackages = packageJson.filter(
+        (pkg) =>
+            pkg.destination.toLowerCase() === destination.toLowerCase()
+    );
+
+    res.json(filteredPackages);
+});
+
+app.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
+});
