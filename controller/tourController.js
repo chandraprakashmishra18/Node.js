@@ -14,8 +14,27 @@ const getPackageById = (req, res) => {
         res.status(404).json({ message: 'Package not found' });
     }
 };
+const createPackage = (req, res) => {
+    const newPackage = req.body;
+    tourModel.save(newPackage);
+    res.status(201).json({ message: 'Package created successfully' });
+}
+const updatePackage = (req, res) => {
+    const id = Number(req.params.id);
+    const updatedPackage = req.body;
+    tourModel.update(id, updatedPackage);
+    res.json({ message: 'Package updated successfully' });
+};
+const deletePackage = (req, res) => {
+    const id = Number(req.params.id);
+    tourModel.delete(id);
+    res.json({ message: 'Package deleted successfully' });
+}
 
 module.exports = {
     getAllPackages,
-    getPackageById
+    getPackageById,
+    createPackage,
+    updatePackage,
+    deletePackage
 };

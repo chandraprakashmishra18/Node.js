@@ -5,7 +5,7 @@ const express = require('express');
 
 const app = express();
 const port = 3000;
-
+app.use(express.json()); // Middleware to parse JSON request bodies
 
 // importing the packages from the tour.js file 
 // const packages = require('./data/tour');
@@ -72,8 +72,10 @@ const port = 3000;
 // })
 // ===========================================20-08-2026==========================================
 const tourRouter = require('./router/tourRouter');
+const userRouter = require('./router/userRouter');
 
 app.use('/packages', tourRouter);
+app.use('/user', userRouter);
 // here packages is the home route and tourRouter is the router which we have created in the router
 //  folder
 
