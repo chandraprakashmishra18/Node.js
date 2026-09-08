@@ -39,6 +39,23 @@ const update = (id, updatedPackage) => {
     }
 };
 
+// 2ndry method to update using object but we use index one method bcz it has less time complexity s
+// so works better then object method
+// ... spread operator is used to copy the existing properties of the object and then we can update the properties we want to change
+// const update = (id, updatedPackage) => {
+//       const data = fs.readFileSync(packagesFilePath, 'utf-8');
+//       const packages = JSON.parse(data);
+//       const object = packages.find((item) => item.id === id);
+//       if (object) {
+//           Object.assign(object, updatedPackage);fs.writeFileSync(packagesFilePath,
+//                   JSON.stringify(packages, null, 2),
+//                   'utf-8'
+//             );
+//          }
+//       };
+// delete method it can also be done by two ways one is by using find and other is by using 
+// filter in find we have to find then slice the array than return it which is complex 
+// so we use filter method which is simple and easy to understand
 const deletePackage = (id) => {
       const data = fs.readFileSync(packagesFilePath, 'utf-8');
       const packages = JSON.parse(data);
@@ -48,6 +65,12 @@ const deletePackage = (id) => {
             fs.writeFileSync(packagesFilePath, JSON.stringify(packages, null, 2), 'utf-8');
       }
 };
+// const deletePackage = (id) => {
+//       const data = fs.readFileSync(packagesFilePath, 'utf-8');
+//       const packages = JSON.parse(data);
+//       const updatedPackages = packages.filter((item) => item.id !== id);
+//       fs.writeFileSync(packagesFilePath, JSON.stringify(updatedPackages, null, 2), 'utf-8');
+// }
 
 module.exports = {
     getAll,

@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Priyanshi",
+    "email": "priyanshi@example.com",
+    "password": "password123",
+    "phone": "9876543210",
+    "role": "user",
+    "createdAt": "2026-08-30"
+  },
+  {
+    "id": 2,
+    "name": "Rahul Sharma",
+    "email": "rahul.sharma@example.com",
+    "password": "rahul123",
+    "phone": "9876543211",
+    "role": "user",
+    "createdAt": "2026-08-29"
+  },
+  {
+    "id": 3,
+    "name": "Ananya Singh",
+    "email": "ananya.singh@example.com",
+    "password": "ananya123",
+    "phone": "9876543212",
+    "role": "user",
+    "createdAt": "2026-08-28"
+  },
+  {
+    "id": 4,
+    "name": "Arjun Mehta",
+    "email": "arjun.mehta@example.com",
+    "password": "arjun456",
+    "phone": "9876543213",
+    "role": "user",
+    "createdAt": "2026-08-27"
+  },
+  {
+    "id": 5,
+    "name": "Kavya Verma",
+    "email": "kavya.verma@example.com",
+    "password": "kavya789",
+    "phone": "9876543214",
+    "role": "user",
+    "createdAt": "2026-08-26"
+  },
+  {
+    "id": 6,
+    "name": "Aditya Kapoor",
+    "email": "aditya.kapoor@example.com",
+    "password": "aditya123",
+    "phone": "9876543215",
+    "role": "user",
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": 7,
+    "name": "Mehak Joshi",
+    "email": "mehak.joshi@example.com",
+    "password": "mehak456",
+    "phone": "9876543216",
+    "role": "user",
+    "createdAt": "2026-08-24"
+  },
+  {
+    "id": 8,
+    "name": "Rohan Malhotra",
+    "email": "rohan.malhotra@example.com",
+    "password": "rohan789",
+    "phone": "9876543217",
+    "role": "user",
+    "createdAt": "2026-08-23"
+  }
+]
