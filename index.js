@@ -71,13 +71,13 @@ app.use(express.json()); // Middleware to parse JSON request bodies
 //     console.log("sever is running")
 // })
 // ===========================================20-08-2026==========================================
-const tourRouter = require('./router/tourRouter');
-const userRouter = require('./router/userRouter');
+// const tourRouter = require('./router/tourRouter');
+// const userRouter = require('./router/userRouter');
 
-app.use('/packages', tourRouter);
-app.use('/user', userRouter);
-// here packages is the home route and tourRouter is the router which we have created in the router
-//  folder
+// app.use('/packages', tourRouter);
+// app.use('/user', userRouter);
+// // here packages is the home route and tourRouter is the router which we have created in the router
+// //  folder
 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
