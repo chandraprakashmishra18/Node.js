@@ -81,7 +81,7 @@ app.use(express.json()); // Middleware to parse JSON request bodies
 
 
 const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = "mongodb+srv://prashantmishra44140_db_user:<db_password>@cluster0.5vz2k5q.mongodb.net/?appName=Cluster0";
+const uri = "mongodb+srv://prashantmishra44140_db_user:@MongoDB2026@cluster0.5vz2k5q.mongodb.net/?appName=Cluster0";
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
